@@ -1,0 +1,3 @@
+rabbit:
+  queue:
+    entries: ${SEND_PROVISION_QUEUE:entries}
