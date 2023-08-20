@@ -1,3 +1,13 @@
+spring:
+  rabbitmq:
+    host: ${RABBIT_HOST:localhost}
+    password: ${RABBIT_PASS:guest}
+    username: ${RABBIT_USER:guest}
+    port: ${RABBIT_PORT:5672}
+
 rabbit:
   queue:
     entries: ${SEND_PROVISION_QUEUE:entries}
+
+server:
+  port: 8081
