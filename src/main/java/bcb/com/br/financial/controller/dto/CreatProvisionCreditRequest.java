@@ -12,4 +12,6 @@ public class CreatProvisionCreditRequest {
     @Min(1)
     private Double value;
     private String channel;
+    //todo em uma implementação futura poderia ser o id da requisiçaõ da compra.
+    private String id;
 }
