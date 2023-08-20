@@ -20,6 +20,7 @@ public class ProvisionCreditController {
 
     @PostMapping("/send")
     public ResponseEntity<Void> create(@RequestBody @Valid CreatProvisionCreditRequest request) {
+        request.setChannel("financial");
         creditProvisionSendService.sendProvisionToQueue(request);
         return ResponseEntity.ok().build();
     }

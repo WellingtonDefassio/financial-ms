@@ -11,4 +11,5 @@ public class CreatProvisionCreditRequest {
     private String cnpj;
     @Min(1)
     private Double value;
+    private String channel;
 }
